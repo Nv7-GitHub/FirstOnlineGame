@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Test</title>
+    <link rel="icon" href="{{ url_for('static',filename='Favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles.css') }}" type="text/css">
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+<script src="{{ url_for('static',filename='game.js') }}"></script>
+<svg height="100%" width="100%" id="svg">
+    <!--
+    {% for position in players %}
+    <circle cx="{{ position.x }}" cy="{{ position.y }}" r="2.5vw" stroke="#00FFFF" stroke-width="0px" fill="#00FFFF"></circle>
+    {% endfor %}
+    -->
+</svg>
+</body>
+</html>
